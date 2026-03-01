@@ -21,3 +21,7 @@ def fib(n):
     for i in range(n):
         a, b = b, a + b
     return a
+def inv(s) -> str:
+    if len(s) <= 1:
+        return True
+    return s[-1] + inv(s[:-1])
